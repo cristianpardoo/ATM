@@ -13,20 +13,21 @@ package atm_machine;
 
 import java.util.Scanner;
 /**
- * 
+ *
  * @author Jose Gomez
  *
  */
 public class ATM {
 	private Bank myBank = new Bank();
 	private Scanner cin = new Scanner(System.in);
-	
+
 	public ATM() {}
 	/**
 	 * This is the ATM welcome Screen<br>
 	 * This screen is displayed until there is user input.
 	 */
 	public void welcomeScreen() {
+		// Test
 		Screen.displayWelcome();
 		//System.out.println("Welcome to bank. press any key to contine...");
 		String choice = cin.nextLine();
@@ -43,8 +44,8 @@ public class ATM {
 		int tries = 0;
 		String pin, cardNumber;
 		boolean accountOpen = false;
-		boolean cancel = false; 
-		
+		boolean cancel = false;
+
 		while(tries < 3 && !accountOpen && !cancel) {
 			if(tries > 0) {
 				System.out.print("Try Again? [y/n]: ");
@@ -79,7 +80,7 @@ public class ATM {
 	public void mainMenu() {
 		boolean quit = false;
 		boolean cancel = false;
-		
+
 		while(!quit) {
 			//Screen.displayMainMenu();
 			String choice = cin.nextLine();
@@ -95,4 +96,3 @@ public class ATM {
 		}
 	}
 }
-
