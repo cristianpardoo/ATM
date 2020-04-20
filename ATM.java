@@ -9,7 +9,7 @@ viewBalance(): allows user to view the balance of their one of their bank accoun
 accessAccount(): allows user to access their bank account if their pin number and account number match
 */
 
-package atm_machine;
+
 
 import java.util.Scanner;
 /**
